@@ -4,10 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    test2
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html">My<span>Portofolio</span></a>
 
+            <img id="mobile-menubutton" class="mobile-menu" src="img/list.svg" alt="">
+
+            <nav>
+                <img id="mobile-exitbutton" class="mobile-menu" src="img/x-circle.svg" alt="">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Bio</a></li>
+                    <li><a href="#">Work Exp</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <section class="primary-screen">
+        <div class="container">
+            <div class="top-col">
+                <h1>Welcome!</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio">
+        <div class="container">
+            <ul>
+                <li>Name : Hizkia Halim</li>
+                <li>DOB : December 24th, 2001</li>
+                <li>Gender : Male</li>
+                <li>Education : Bachelor of Information Technology</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="work-exp">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>none</li>
+                <li>none</li>
+                <li>none</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="message">Message :</label>
+                    <br>
+                    <textarea name="message" id="message"  cols="10" rows="10"></textarea>
+                    <br>
+                    <input type="submit" class="submit-button" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <ul>
+                    <li>Whatsapp : 089xxxxx93</li>
+                    <li>Email : xxxxxxx@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
