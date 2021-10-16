@@ -14,7 +14,6 @@ body{
 .navbar{
     background: var(--colorthree);
     padding: 1em;
-
     .logo{
         text-decoration: none;
         font-weight: bold;
@@ -41,7 +40,11 @@ body{
 }
 
 section{
-    padding: 5em 2em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 ul{
@@ -49,6 +52,7 @@ ul{
     margin: 0;
     padding: 0;
 }
+
 .primary-screen{
     text-align: center;
 }
@@ -97,6 +101,77 @@ ul{
     }
 }
 
-.work-exp{
+nav.menu-btn{
+    display: block;
+}
 
+nav{
+    position: fixed;
+    z-index: 99;
+    width: 60%;
+    right: 0;
+    top: 0;
+    background: var(--colorfour);
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+    li{
+        a{
+            color: var(--colorone);
+            text-decoration: none;
+            display: block;
+            padding: 2em;
+            font-size: 1.5em;
+            text-align: right;
+        }
+
+        &:hover{
+            font-weight: bold;
+        }
+    }
+}
+
+.mobile-menuexit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+    .mobile-menu, .mobile-menuexit{
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 212px auto;
+        place-content: unset;
+        align-items: center;
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul{
+            display: flex;
+        }
+
+        a{
+            font-size: 1em;
+            padding: 1em;
+        }
+
+        ul.primary-nav{
+            margin: 0;
+        }
+    }
 }
