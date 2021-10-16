@@ -1,0 +1,102 @@
+:root{
+    --colorone: #4A403A;
+    --colortwo: #A45D5D;
+    --colorthree: #FFC069;
+    --colorfour: #EFEFEF;
+}
+
+body{
+    background: var(--colorfour);
+    margin: 0;
+    font-family: 'Yaldevi';
+}
+
+.navbar{
+    background: var(--colorthree);
+    padding: 1em;
+
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--colorone);
+        font-size: 2em;
+        
+        span{
+            color: var(--colortwo);
+        }
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+    }
+}
+
+section{
+    padding: 5em 2em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.primary-screen{
+    text-align: center;
+}
+
+.top-col{
+    
+    h1{
+        font-size: 4em;
+        color: var(--colorone);
+    }
+}
+
+.bio{
+    background: var(--colorthree);
+    color: var(--colorone);
+    font-weight: bolder;
+    
+    h2{
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+.mybio{
+    margin: 0;
+
+    li{
+        padding-bottom: 1.5em;
+        margin-left: 2em;
+        position: relative;
+
+        span{
+            color: var(--colortwo);
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: -2em;
+            background-image: url(/portofolio/img/caret-right-fill.svg);
+            background-size: contain;
+            width: 1em;
+            height: 1em;
+            margin-right: .5em;
+        }
+    }
+}
+
+.work-exp{
+
+}
