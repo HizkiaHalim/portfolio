@@ -11,6 +11,7 @@ body {
   font-family: 'Yaldevi';
 }
 
+/*nav part 1*/
 .navbar {
   background: var(--colorthree);
   padding: 1em;
@@ -20,7 +21,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: var(--colorone);
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .navbar .logo span {
@@ -29,6 +30,7 @@ body {
 
 .navbar nav {
   display: none;
+  place-content: flex-end;
 }
 
 .navbar .container {
@@ -65,6 +67,7 @@ ul {
   padding: 0;
 }
 
+/*main screen*/
 .primary-screen {
   text-align: center;
 }
@@ -74,59 +77,79 @@ ul {
   color: var(--colorone);
 }
 
+/*about*/
 .bio {
   background: var(--colorthree);
   color: var(--colorone);
   font-weight: bolder;
+  display: block;
+  padding-top: 3em;
 }
 
 .bio h2 {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
 }
 
-.mybio {
-  margin: 0;
+.bio img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
-.mybio li {
-  padding-bottom: 1.5em;
-  margin-left: 2em;
-  position: relative;
+.bio-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.mybio li span {
-  color: var(--colortwo);
+.bio-left {
+  width: 40%;
+  text-align: center;
 }
 
-.mybio li:before {
-  content: '';
-  position: absolute;
-  left: -2em;
-  background-image: url(/portofolio/img/caret-right-fill.svg);
-  background-size: contain;
-  width: 1em;
-  height: 1em;
-  margin-right: .5em;
+.bio-right {
+  width: 100%;
 }
 
+.bio-right p {
+  margin: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/*nav mobile*/
 nav.menu-btn {
   display: block;
 }
 
 nav {
   position: fixed;
-  z-index: 99;
+  z-index: 9999;
   width: 60%;
   right: 0;
   top: 0;
   background: var(--colorfour);
   height: 100vh;
   padding: 1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 nav ul.primary-nav {
-  margin-top: 5em;
+  margin-top: 3.5em;
 }
 
 nav li a {
@@ -135,11 +158,13 @@ nav li a {
   display: block;
   padding: 2em;
   font-size: 1.5em;
-  text-align: right;
+  text-align: center;
 }
 
 nav li:hover {
   font-weight: bold;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .mobile-menuexit {
@@ -148,6 +173,57 @@ nav li:hover {
   cursor: pointer;
 }
 
+/*skill*/
+.skill {
+  padding: 2em;
+}
+
+.skill .bars {
+  width: 100%;
+  background-color: var(--colortwo);
+  border-radius: 6em;
+}
+
+.skill .a {
+  font-weight: 600;
+  color: var(--colorone);
+  padding-top: 1.5em;
+  font-size: 1.5em;
+}
+
+.skill h2 {
+  font-size: 3em;
+  color: var(--colorone);
+}
+
+.info {
+  text-align: right;
+  background-color: #FFC069;
+  border-radius: 6em;
+  font-weight: 500;
+}
+
+.c {
+  width: 90%;
+}
+
+.html {
+  width: 60%;
+}
+
+.css {
+  width: 40%;
+}
+
+.java {
+  width: 60%;
+}
+
+.sql {
+  width: 50%;
+}
+
+/*screen splitting*/
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menuexit {
     display: none;
@@ -157,7 +233,6 @@ nav li:hover {
     display: grid;
     -ms-grid-columns: 212px auto;
         grid-template-columns: 212px auto;
-    place-content: unset;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -179,6 +254,7 @@ nav li:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 1.5em;
   }
   .navbar nav a {
     font-size: 1em;
@@ -186,6 +262,58 @@ nav li:hover {
   }
   .navbar nav ul.primary-nav {
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bio {
+    background: var(--colorthree);
+    color: var(--colorone);
+    font-weight: bolder;
+    display: block;
+    padding-top: 3em;
+  }
+  .bio h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+  .bio img {
+    height: 400px;
+    width: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 2em;
+    padding-left: 4em;
+    border-radius: 6em;
+  }
+  .bio-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bio-left {
+    width: 40%;
+  }
+  .bio-right {
+    width: 50%;
+  }
+  .bio-right .text1 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .bio-right p {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=main.css.map */

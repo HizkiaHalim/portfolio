@@ -11,6 +11,8 @@ body{
     font-family: 'Yaldevi';
 }
 
+/*nav part 1*/
+
 .navbar{
     background: var(--colorthree);
     padding: 1em;
@@ -18,7 +20,7 @@ body{
         text-decoration: none;
         font-weight: bold;
         color: var(--colorone);
-        font-size: 2em;
+        font-size: 2.5em;
         
         span{
             color: var(--colortwo);
@@ -27,6 +29,7 @@ body{
 
     nav{
         display: none;
+        place-content: flex-end;
     }
     
     .container{
@@ -53,6 +56,8 @@ ul{
     padding: 0;
 }
 
+/*main screen*/
+
 .primary-screen{
     text-align: center;
 }
@@ -65,41 +70,51 @@ ul{
     }
 }
 
+/*about*/
+
 .bio{
     background: var(--colorthree);
     color: var(--colorone);
     font-weight: bolder;
+    display: block;
+    padding-top: 3em;
     
     h2{
-        font-size: 2em;
+        font-size: 3em;
         text-align: center;
     }
-}
 
-.mybio{
-    margin: 0;
-
-    li{
-        padding-bottom: 1.5em;
-        margin-left: 2em;
-        position: relative;
-
-        span{
-            color: var(--colortwo);
-        }
-
-        &:before{
-            content: '';
-            position: absolute;
-            left: -2em;
-            background-image: url(/portofolio/img/caret-right-fill.svg);
-            background-size: contain;
-            width: 1em;
-            height: 1em;
-            margin-right: .5em;
-        }
+    img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 }
+
+.bio-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bio-left{
+    width: 40%;
+    text-align: center;
+}
+
+.bio-right{
+    width: 100%;
+    p{
+        margin: 1em;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-align: justify;
+    }
+}
+
+/*nav mobile*/
 
 nav.menu-btn{
     display: block;
@@ -107,16 +122,16 @@ nav.menu-btn{
 
 nav{
     position: fixed;
-    z-index: 99;
+    z-index: 9999;
     width: 60%;
     right: 0;
     top: 0;
     background: var(--colorfour);
     height: 100vh;
     padding: 1em;
-
+    transition: 0.3s;
     ul.primary-nav {
-        margin-top: 5em;
+        margin-top: 3.5em;
     }
     li{
         a{
@@ -125,11 +140,12 @@ nav{
             display: block;
             padding: 2em;
             font-size: 1.5em;
-            text-align: right;
+            text-align: center;
         }
 
         &:hover{
             font-weight: bold;
+            transition: 0.3s ease;
         }
     }
 }
@@ -140,6 +156,45 @@ nav{
     cursor: pointer;
 }
 
+/*skill*/
+.skill{
+    padding: 2em;
+    
+    .bars{
+        width: 100%;
+        background-color: var(--colortwo);
+        border-radius: 6em;
+    }
+
+    .a {
+        font-weight: 600;
+        color: var(--colorone);
+        padding-top: 1.5em;
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 3em;
+        color: var(--colorone);
+    }
+
+}
+
+.info{
+    text-align: right;
+    background-color: #FFC069;
+    border-radius: 6em;
+    font-weight: 500;
+}
+
+.c{width: 90%;}
+.html{width: 60%;}
+.css{width: 40%;}
+.java{width: 60%;}
+.sql{width: 50%;}
+
+/*screen splitting*/
+
 @media only screen and (min-width: 768px){
     .mobile-menu, .mobile-menuexit{
         display: none;
@@ -148,7 +203,6 @@ nav{
     .navbar .container{
         display: grid;
         grid-template-columns: 212px auto;
-        place-content: unset;
         align-items: center;
     }
 
@@ -163,6 +217,7 @@ nav{
 
         ul{
             display: flex;
+            font-size: 1.5em;
         }
 
         a{
@@ -172,6 +227,54 @@ nav{
 
         ul.primary-nav{
             margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .bio{
+        background: var(--colorthree);
+        color: var(--colorone);
+        font-weight: bolder;
+        display: block;
+        padding-top: 3em;
+        
+        h2{
+            font-size: 3em;
+            text-align: center;
+        }
+    
+        img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            padding: 2em;
+            padding-left: 4em;
+            border-radius: 6em;
+        }
+    }
+    
+    .bio-content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .bio-left{
+        width: 40%;
+    }
+    
+    .bio-right{
+        width: 50%;
+        .text1{
+            font-size: 2em;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.5em;
+            font-weight: 300;
+            text-align: justify;
         }
     }
 }
