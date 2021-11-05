@@ -178,12 +178,6 @@ nav li:hover {
   padding: 2em;
 }
 
-.skill .bars {
-  width: 100%;
-  background-color: var(--colortwo);
-  border-radius: 6em;
-}
-
 .skill .a {
   font-weight: 600;
   color: var(--colorone);
@@ -196,31 +190,49 @@ nav li:hover {
   color: var(--colorone);
 }
 
-.info {
+.meter {
   text-align: right;
-  background-color: #FFC069;
   border-radius: 6em;
-  font-weight: 500;
+  background: var(--colortwo);
+  overflow: hidden;
+  width: 100%;
 }
 
-.c {
-  width: 90%;
+.meter span {
+  display: block;
+  height: 100%;
 }
 
-.html {
-  width: 60%;
+.progress {
+  background-color: var(--colorthree);
+  -webkit-animation: progressBar 3s ease-in-out;
+          animation: progressBar 3s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  border-radius: 6em;
 }
 
-.css {
-  width: 40%;
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-.java {
-  width: 60%;
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-.sql {
-  width: 50%;
+/*contact*/
+.contact {
+  background-color: #FFC069;
 }
 
 /*screen splitting*/
