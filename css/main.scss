@@ -159,13 +159,6 @@ nav{
 /*skill*/
 .skill{
     padding: 2em;
-    
-    .bars{
-        width: 100%;
-        background-color: var(--colortwo);
-        border-radius: 6em;
-    }
-
     .a {
         font-weight: 600;
         color: var(--colorone);
@@ -180,18 +173,35 @@ nav{
 
 }
 
-.info{
+.meter { 
     text-align: right;
-    background-color: #FFC069;
     border-radius: 6em;
-    font-weight: 500;
+    background: var(--colortwo);
+    overflow: hidden;
+    width: 100%;
 }
 
-.c{width: 90%;}
-.html{width: 60%;}
-.css{width: 40%;}
-.java{width: 60%;}
-.sql{width: 50%;}
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: var(--colorthree);
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+    border-radius: 6em;
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/*contact*/
+.contact{
+    background-color: #FFC069;
+}
 
 /*screen splitting*/
 
