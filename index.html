@@ -8,82 +8,84 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="index.html">My<span>Portfolio</span></a>
-
-            <img id="mobile-menubutton" class="mobile-menu" src="img/list.svg" alt="" width="30">
-
-            <nav>
-                <img id="mobile-exitbutton" class="mobile-menuexit" src="img/x-circle.svg" alt="" width="30">
-
-                <ul class="primary-nav">
-                    <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skill</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-            </nav>
+    <div class="fullbody">
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="index.html">My<span>Portfolio</span></a>
+    
+                <img id="mobile-menubutton" class="mobile-menu" src="img/list.svg" alt="" width="30">
+    
+                <nav>
+                    <img id="mobile-exitbutton" class="mobile-menuexit" src="img/x-circle.svg" alt="" width="30">
+    
+                    <ul class="primary-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+    
+                </nav>
+            </div>
         </div>
+    
+        <section id="home" class="primary-screen">
+            <div class="container">
+                <div class="top-col">
+                    <h1>Welcome!</h1>
+                </div>
+            </div>
+        </section>
+    
+        <section id="about" class="bio">
+            <h2>About Me</h2>
+            <div class="bio-content">
+                <div class="bio-left">
+                    <img src="img/photo.jpg">
+                </div>
+                <div class="bio-right">
+                    <p>Hi there! Welcome to my portfolio, my name is Hizkia Halim
+                        and I'm from Indonesia. Among friends, I am described as a 
+                        planner person and quick learner. I plan every step that I will 
+                        take and I love learning new things especially in programming</p>
+                </div>
+                
+            </div>
+        </section>
+    
+        <section id="skill" class="skill">
+            <h2>My skills</h2>
+            <div class="split">
+                <div class="left">
+                    <li>C++</li>
+                    <li>JAVA</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
+                </div>
+                <div class="right">
+                    <li>SQL</li>
+                    <li>Node.js</li>
+                    <li>Flutter</li>
+                    <li>Python</li>
+                    <li>Microsoft Office</li>
+                </div>
+            </div>
+    
+        </section>
+    
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="paper">
+                <li class="wa">08988808193</li>
+                <li class="em">hizkiahalim1@gmail.com</li>
+                <li class="lin">Hizkia Halim</li>
+                <li class="git">HizkiaHalim</li>
+            </div>
+            
+        </section>
+    
+        <script src="script.js"></script>
     </div>
-
-    <section class="primary-screen">
-        <div class="container">
-            <div class="top-col">
-                <h1>Welcome!</h1>
-            </div>
-        </div>
-    </section>
-
-    <section class="bio">
-        <h2>About Me</h2>
-        <div class="bio-content">
-            <div class="bio-left">
-                <img src="img/photo.jpg">
-            </div>
-            <div class="bio-right">
-                <p>Hi there! Welcome to my portfolio, my name is Hizkia Halim
-                    and I'm from Indonesia. Among friends, I am described as a 
-                    planner person and quick learner. I plan every step that I will 
-                    take and I love learning new things especially in programming </p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="skill">
-        <h2>My skills</h2>
-        <div class="a">C++</div>
-        <div class="meter">
-            <span style="width:90%;"><span class="progress">90%</span></span>
-        </div>
-        <div class="a">HTML</div>
-        <div class="meter">
-            <span style="width:60%;"><span class="progress">60%</span></span>
-        </div>
-        <div class="a">CSS</div>
-        <div class="meter">
-            <span style="width:40%;"><span class="progress">40%</span></span>
-        </div>
-        <div class="a">JAVA</div>
-        <div class="meter">
-            <span style="width:60%;"><span class="progress">60%</span></span>
-        </div>
-        <div class="a">SQL</div>
-        <div class="meter">
-            <span style="width:50%;"><span class="progress">50%</span></span>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contact</h2>
-        Whatsapp : 08988808193<br>
-        Email : hizkiahalim1@gmail.com
-    </section>
-
-    <script src="script.js"></script> 
-    
-    
 </body>
 </html>
