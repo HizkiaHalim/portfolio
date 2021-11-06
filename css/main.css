@@ -9,12 +9,23 @@ body {
   background: var(--colorfour);
   margin: 0;
   font-family: 'Yaldevi';
+  overflow: hidden;
+  height: 100vh;
+}
+
+.fullbody {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /*nav part 1*/
 .navbar {
   background: var(--colorthree);
-  padding: 1em;
+  padding: .5em;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar .logo {
@@ -42,6 +53,7 @@ body {
 
 .navbar .mobile-menu {
   cursor: pointer;
+  padding-right: 2em;
 }
 
 section {
@@ -125,7 +137,7 @@ ul {
 
 .bio-right p {
   margin: 1em;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 300;
   text-align: justify;
 }
@@ -175,7 +187,7 @@ nav li:hover {
 
 /*skill*/
 .skill {
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .skill .a {
@@ -190,49 +202,79 @@ nav li:hover {
   color: var(--colorone);
 }
 
-.meter {
-  text-align: right;
-  border-radius: 6em;
-  background: var(--colortwo);
-  overflow: hidden;
-  width: 100%;
+.skill .split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.meter span {
-  display: block;
-  height: 100%;
+.skill .split li {
+  font-weight: 400;
+  color: var(--colorone);
+  font-size: 1.5em;
+  padding: 1em;
+  margin-left: 3em;
 }
 
-.progress {
-  background-color: var(--colorthree);
-  -webkit-animation: progressBar 3s ease-in-out;
-          animation: progressBar 3s ease-in-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  border-radius: 6em;
+.skill .split .left {
+  width: 50%;
 }
 
-@-webkit-keyframes progressBar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes progressBar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+.skill .split .right {
+  width: 50%;
 }
 
 /*contact*/
 .contact {
-  background-color: #FFC069;
+  background-color: var(--colorthree);
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 3em;
+  color: var(--colorone);
+}
+
+.contact .paper {
+  background-color: var(--colorfour);
+  padding: 1em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact li {
+  list-style: none;
+  padding: 2em;
+  font-weight: 400;
+}
+
+.contact li:before {
+  content: '';
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.contact .wa:before {
+  background-image: url("../img/whatsapp.svg");
+}
+
+.contact .em:before {
+  background-image: url("../img/envelope.svg");
+}
+
+.contact .lin:before {
+  background-image: url("../img/linkedin.svg");
+}
+
+.contact .git:before {
+  background-image: url("../img/github.svg");
 }
 
 /*screen splitting*/

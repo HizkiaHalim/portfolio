@@ -9,13 +9,24 @@ body{
     background: var(--colorfour);
     margin: 0;
     font-family: 'Yaldevi';
+    overflow: hidden;
+    height: 100vh;
+}
+
+.fullbody{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 /*nav part 1*/
 
 .navbar{
     background: var(--colorthree);
-    padding: 1em;
+    padding: .5em;
+    position: fixed;
+    width: 100%;
     .logo{
         text-decoration: none;
         font-weight: bold;
@@ -39,6 +50,7 @@ body{
 
     .mobile-menu{
         cursor: pointer;
+        padding-right: 2em;
     }
 }
 
@@ -108,7 +120,7 @@ ul{
     width: 100%;
     p{
         margin: 1em;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: 300;
         text-align: justify;
     }
@@ -158,7 +170,7 @@ nav{
 
 /*skill*/
 .skill{
-    padding: 2em;
+    padding: 1.5em;
     .a {
         font-weight: 600;
         color: var(--colorone);
@@ -171,37 +183,85 @@ nav{
         color: var(--colorone);
     }
 
+    .split{
+        display: flex;
+        flex-direction: row;
+
+        li{
+            font-weight: 400;
+            color: var(--colorone);
+            font-size: 1.5em;
+            padding: 1em;
+            margin-left: 3em;
+        }
+        
+        .left{
+            width: 50%;
+        }
+        .right{
+            width: 50%;
+        }
+    }
+
 }
 
-.meter { 
-    text-align: right;
-    border-radius: 6em;
-    background: var(--colortwo);
-    overflow: hidden;
-    width: 100%;
-}
-
-.meter span {
-    display: block;
-    height: 100%;
-}
-
-.progress {
-    background-color: var(--colorthree);
-    animation: progressBar 3s ease-in-out;
-    animation-fill-mode:both; 
-    border-radius: 6em;
-}
-
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
 
 /*contact*/
 .contact{
-    background-color: #FFC069;
+    background-color: var(--colorthree);
+    
+    h2{
+        text-align: center;
+        font-size: 3em;
+        color: var(--colorone);
+    }
+
+    .paper{
+        background-color: var(--colorfour);
+        padding: 1em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    li{
+        list-style: none;
+        padding: 2em;
+        font-weight: 400;
+        &:before{
+            content: '';
+            width: 1.2em;
+            height: 1.2em;
+            display: inline-block;
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+
+    .wa{
+        &:before{
+            background-image: url('../img/whatsapp.svg');
+        }
+    }
+
+    .em{
+        &:before{
+            background-image: url('../img/envelope.svg');
+        }
+    }
+
+    .lin{
+        &:before{
+            background-image: url('../img/linkedin.svg');
+        }
+    }
+
+    .git{
+        &:before{
+            background-image: url('../img/github.svg');
+        }
+    }
 }
+
+
 
 /*screen splitting*/
 
