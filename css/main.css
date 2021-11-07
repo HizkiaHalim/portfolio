@@ -133,6 +133,16 @@ ul {
 
 .bio-right {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bio-right p {
@@ -140,6 +150,22 @@ ul {
   font-size: 1.1em;
   font-weight: 300;
   text-align: justify;
+}
+
+.bio-right a {
+  background-color: var(--colorone);
+  text-decoration: none;
+  color: var(--colorthree);
+  padding: 1em;
+  border-radius: 2em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bio-right a:hover {
+  background-color: var(--colortwo);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 /*nav mobile*/
