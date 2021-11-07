@@ -242,6 +242,11 @@ nav li:hover {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.contact a {
+  text-decoration: none;
+  color: var(--colorone);
+}
+
 .contact li {
   list-style: none;
   padding: 2em;
@@ -274,7 +279,7 @@ nav li:hover {
 }
 
 /*screen splitting*/
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 383px) {
   .bio {
     background: var(--colorthree);
     color: var(--colorone);
@@ -320,6 +325,9 @@ nav li:hover {
     font-weight: 300;
     text-align: justify;
   }
+}
+
+@media only screen and (min-width: 400px) {
   .skill {
     padding: 1.5em;
   }
