@@ -331,12 +331,6 @@ nav li:hover {
   .skill {
     padding: 1.5em;
   }
-  .skill .a {
-    font-weight: 600;
-    color: var(--colorone);
-    padding-top: 1.5em;
-    font-size: 1.5em;
-  }
   .skill h2 {
     font-size: 3em;
     color: var(--colorone);
@@ -362,6 +356,19 @@ nav li:hover {
   }
   .skill .split .right {
     width: 40%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .skill .split li {
+    font-size: 1.1em;
+    padding-left: 1em;
+  }
+  .skill .split .left {
+    width: 40%;
+  }
+  .skill .split .right {
+    width: 50%;
   }
 }
 
@@ -403,6 +410,35 @@ nav li:hover {
   }
   .navbar nav ul.primary-nav {
     margin: 0;
+  }
+  .skill {
+    padding: 1.5em;
+  }
+  .skill h2 {
+    font-size: 3em;
+    color: var(--colorone);
+  }
+  .skill .split {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .skill .split li {
+    font-weight: 400;
+    color: var(--colorone);
+    font-size: 1.5em;
+    padding: 1em;
+    margin-left: 3em;
+  }
+  .skill .split .left {
+    width: 40%;
+  }
+  .skill .split .right {
+    width: 50%;
   }
 }
 
