@@ -184,14 +184,17 @@ nav{
             font-weight: 400;
             color: var(--colorone);
             font-size: 1.2em;
-            padding: 1em;
-            margin-left: 3em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            margin-left: 2em;
         }
         
         .left{
+            padding-left: 2em;
             width: 30%;
         }
         .right{
+            padding-left: 2em;
             width: 40%;
         }
     }
