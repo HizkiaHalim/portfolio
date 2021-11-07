@@ -97,8 +97,8 @@ ul{
     }
 
     img{
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         object-fit: cover;
         border-radius: 10px;
     }
@@ -120,7 +120,7 @@ ul{
     width: 100%;
     p{
         margin: 1em;
-        font-size: 1.3em;
+        font-size: 1.1em;
         font-weight: 300;
         text-align: justify;
     }
@@ -170,14 +170,7 @@ nav{
 
 /*skill*/
 .skill{
-    padding: 1.5em;
-    .a {
-        font-weight: 600;
-        color: var(--colorone);
-        padding-top: 1.5em;
-        font-size: 1.5em;
-    }
-
+    padding: 1em;
     h2{
         font-size: 3em;
         color: var(--colorone);
@@ -190,7 +183,7 @@ nav{
         li{
             font-weight: 400;
             color: var(--colorone);
-            font-size: 1.5em;
+            font-size: 1.2em;
             padding: 1em;
             margin-left: 3em;
         }
@@ -264,6 +257,85 @@ nav{
 
 
 /*screen splitting*/
+@media only screen and (min-width: 400px){
+    .bio{
+        background: var(--colorthree);
+        color: var(--colorone);
+        font-weight: bolder;
+        display: block;
+        padding-top: 3em;
+        
+        h2{
+            font-size: 3em;
+            text-align: center;
+        }
+    
+        img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    
+    .bio-content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .bio-left{
+        width: 40%;
+        text-align: center;
+    }
+    
+    .bio-right{
+        width: 100%;
+        p{
+            margin: 1em;
+            font-size: 1.3em;
+            font-weight: 300;
+            text-align: justify;
+        }
+    }
+    .skill{
+        padding: 1.5em;
+        .a {
+            font-weight: 600;
+            color: var(--colorone);
+            padding-top: 1.5em;
+            font-size: 1.5em;
+        }
+    
+        h2{
+            font-size: 3em;
+            color: var(--colorone);
+        }
+    
+        .split{
+            display: flex;
+            flex-direction: row;
+    
+            li{
+                font-weight: 400;
+                color: var(--colorone);
+                font-size: 1.5em;
+                padding: 1em;
+                margin-left: 3em;
+            }
+            
+            .left{
+                width: 30%;
+            }
+            .right{
+                width: 40%;
+            }
+        }
+    
+    }
+}
+
 
 @media only screen and (min-width: 768px){
     .mobile-menu, .mobile-menuexit{
