@@ -277,7 +277,124 @@ nav{
     }
 }
 
+/*moreaboutme*/
+.cutsy{
+    h2{
+        color: var(--colorone);
+        font-family: 'Yaldevi';
+        font-size: 2em;
+    }
+}
 
+.cutsy-left{
+    img{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.cutsy-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Yaldevi';
+    p{
+        text-align: center;
+        margin: 0.5em 2em;
+        color: var(--colorone);
+        font-size: 1.1em;
+    }
+
+    a{
+        background-color: var(--colortwo);
+        text-decoration: none;
+        color: var(--colorthree);
+        padding: 1em 3em;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        align-items: center;
+        &:hover{
+            background-color: var(--colorone);
+            transition: 0.3s ease;
+        }
+    }
+}
+
+.pokedex{
+    h2{
+        color: var(--colorone);
+        font-family: 'Yaldevi';
+        font-size: 2em;
+    }
+}
+
+.pokedex-left{
+    display: flex;
+    flex-direction: row;
+    img{
+        margin: 0.5em;
+        width: 100px;
+        height: 200px;
+    }
+}
+
+.pokedex-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Yaldevi';
+    p{
+        text-align: center;
+        margin: 0.5em 2em;
+        color: var(--colorone);
+        font-size: 1.1em;
+    }
+
+    a{
+        background-color: var(--colortwo);
+        text-decoration: none;
+        color: var(--colorthree);
+        padding: 1em 3em;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        align-items: center;
+        &:hover{
+            background-color: var(--colorone);
+            transition: 0.3s ease;
+        }
+    }
+}
+
+.myspend{
+    h2{
+        color: var(--colorone);
+        font-family: 'Yaldevi';
+        font-size: 2em;
+    }
+}
+
+.myspend-left{
+    display: flex;
+    flex-direction: row;
+    img{
+        margin: 0.5em;
+        width: 100px;
+        height: 200px;
+    }
+}
+
+.myspend-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Yaldevi';
+    p{
+        text-align: center;
+        margin: 0.5em 2em;
+        color: var(--colorone);
+        font-size: 1.1em;
+    }
+}
 
 /*screen splitting*/
 @media only screen and (min-width: 383px){
